@@ -2,7 +2,7 @@ var http = require('http'),
     fs = require('fs');
 
 
-fs.readFileSync('./session-js.html', function (err, html) {
+fs.readFileSync('./html/session-js.html', function (err, html) {
     if (err) {
         throw err;
     }
