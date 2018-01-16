@@ -1,6 +1,5 @@
 <!-- Testing how to include a visit counter -->
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
