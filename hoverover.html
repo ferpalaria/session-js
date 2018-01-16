@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<div id="mouseOverMe">Put the mouse over here!</div><p>
+<div class="highlihtText">This is some text.</div><p>
+<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste veniam porro laboriosam necessitatibus ad eveniet placeat nobis animi atque culpa, quae excepturi deserunt magni! Facere deserunt officia impedit quis recusandae.</div>
+<div class="highlihtText">This is important, too.</div>
+
+<script type="text/javascript">
+
+var divs = document.getElementsByClassName('highlihtText');
+
+  var mouseOverMe = document.getElementById('mouseOverMe');
+
+  mouseOverMe.addEventListener('mouseover',function(){
+    console.log("mouseOver");
+    for (var i = 0; i < divs.length; i++){
+      divs[i].style.color = 'red';
+      divs[i].style.fontWeight = 'bold';
+    }
+  });
+
+  mouseOverMe.addEventListener('mouseout',function(){
+    console.log("ouseOut");
+for (var i = 0; i < divs.length; i++) {
+  divs[i].style.color = "red";
+  divs[i].style.fontWeight = "bold";
+}
+
+    for (var i = 0; i < divs.length; i++){
+      divs[i].style.color = 'black';
+      divs[i].style.fontWeight = 'normal';
+    }
+  });
+</script>
+
+</body>
+</html>
