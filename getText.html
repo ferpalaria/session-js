@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<input type="text" id="nameInput" value="Type Your Name"></input><p>
+Hello, <span id="nomeField">guest.</span>
+
+<script type="text/javascript">
+  function nameHandler(e){
+    if (e.keyCode == 13){
+      var nameInput = document.getElementById('nameInput');
+      var nameField = document.getElementById('nomeField');
+      nameField.innerHTML = nameInput.value;
+      nameField.style.backgroundColor = 'cyan';
+      nameField.style.textTransform = 'capitalize';
+    }
+  }
+  document.addEventListener('keyup', nameHandler);
+</script>
+</body>
+</html>
